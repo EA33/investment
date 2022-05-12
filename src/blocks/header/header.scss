@@ -106,7 +106,7 @@
 
 		@include media ("<=md") {
 			padding-top: 0;
-			padding-bottom: 70px;
+			padding-bottom: 0;
 		}
 
 		@include media ("<=xs") {
