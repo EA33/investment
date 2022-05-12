@@ -7,10 +7,6 @@
 		background-position: top left 75%;
 	}
 
-	@include media ("<=md") {
-		max-height: 800px;
-	}
-
 	&__top {
 		display: flex;
 		align-items: center;
