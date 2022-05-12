@@ -52,7 +52,7 @@
 		border: 1px solid rgba($color: #fff, $alpha: .2);
 		color: $colorText;
 		cursor: pointer;
-		transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+		transition: all .5s;
 
 		@include media ("<=md") {
 			font-size: 20px;
