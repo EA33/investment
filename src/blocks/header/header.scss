@@ -253,6 +253,14 @@
 			margin-bottom: 70px;
 		}
 
+		@include media ("<=xs") {
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 70px;
+			}
+		}
+
 		&:hover {
 			color: $colorHover;
 		}
