@@ -44,6 +44,11 @@
 
 		@include media ("<=sm") {
 			margin-left: 0;
+			margin-bottom: 0;
+		}
+
+		@include media ("<=xxs") {
+			margin-bottom: 40px;
 		}
 	}
 
