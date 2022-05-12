@@ -1,0 +1,219 @@
+.footer {
+	$self: &;
+	background: url(images/bg-footer.png) top right / cover no-repeat transparent;
+	padding: 200px 0 0;
+
+	@include media ("<=xxxlg") {
+		background: url(images/bg-footer.png) top right 69% / cover no-repeat transparent;
+	}
+
+	@include media ("<=md") {
+		padding: 100px 0 0;
+	}
+
+
+	&__title {
+		margin-bottom: 100px;
+
+		@include media ("<=md") {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		padding-bottom: 200px;
+
+		@include media ("<=md") {
+			padding-bottom: 100px;
+		}
+
+		@include media ("<=sm") {
+			flex-wrap: wrap;
+		}
+
+		@include media ("<=xxs") {
+			padding-bottom: 50px;
+		}
+
+	}
+
+	&__content {
+		max-width: 299px;
+		margin-right: 180px;
+		flex-shrink: 0;
+
+		@include media ("<=lg") {
+			margin-right: 100px;
+		}
+
+		@include media ("<=sm") {
+			max-width: 430px;
+			flex-shrink: 1;
+			margin-right: 0;
+			margin-bottom: 70px;
+		}
+
+	}
+
+	&__subtitle {
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: 600;
+		margin-bottom: 40px;
+
+		@include media ("<=md") {
+			font-size: 25px;
+			line-height: 36px;
+		}
+
+		@include media ("<=sm") {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__address {
+		max-width: 240px;
+		font-size: 22px;
+		line-height: 34px;
+		font-weight: 600;
+
+		@include media ("<=sm") {
+			max-width: 100%;
+		}
+
+		br {
+			@include media ("<=sm") {
+				display: none;
+			}
+		}
+	}
+
+	&__form {
+		max-width: 683px;
+		width: 100%;
+
+		@include media ("<=sm") {
+			max-width: 100%;
+		}
+	}
+
+	&__form-title {
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: 600;
+		margin-bottom: 40px;
+
+
+		@include media ("<=md") {
+			font-size: 25px;
+			line-height: 36px;
+		}
+	}
+
+	&__form-text {
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 13px;
+		margin-top: 20px;
+		color: $colorText;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__form-input {
+		font-size: 16px;
+		line-height: 26px;
+		width: 100%;
+		box-sizing: border-box;
+		background: none;
+		border: none;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+		outline: none;
+		padding-bottom: 13px;
+
+		&_phone {
+			@include media ("<=lg") {
+				padding-bottom: 36px;
+			}
+
+		}
+
+
+		&::placeholder {
+			font-size: 16px;
+			line-height: 26px;
+			color: #fff;
+
+			@include media ("<=lg") {
+				white-space: pre-line;
+				margin-bottom: 13px;
+			}
+		}
+
+		@include media ("<=xs") {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__form-textarea {
+		width: 100%;
+		min-height: 142px;
+		background: none;
+		border: none;
+		box-sizing: border-box;
+		margin-bottom: 50px;
+		resize: none;
+		color: #fff;
+		outline: none;
+		border-bottom: 1px solid #fff;
+
+		@include media ("<=sm") {
+			margin-bottom: 30px;
+		}
+
+		&::placeholder {
+			font-size: 16px;
+			line-height: 26px;
+			color: #fff;
+			margin-bottom: 13px;
+		}
+	}
+
+	&__form-btn {
+		// min-width: 163px;
+		background: none;
+		font-size: 15px;
+		line-height: 24px;
+		font-family: "Source Sans Pro", sans-serif;
+		color: #fff;
+		box-sizing: border-box;
+	}
+
+	&__map {
+		max-width: 1975px;
+		height: 480px;
+		box-sizing: border-box;
+		background: url(images/bg-map.png) bottom left 20% /contain no-repeat transparent;
+
+		@include media ("<=xlg") {
+			background: url(images/bg-map.png) bottom left 40%/ 90% no-repeat transparent;
+		}
+
+		@include media ("<=lg") {
+			height: 320px;
+		}
+
+		@include media ("<=md") {
+			height: 280px;
+		}
+
+		@include media ("<=xs") {
+			height: 160px;
+		}
+	}
+
+}

@@ -1,0 +1,140 @@
+.feedback {
+	$self: &;
+	padding: 200px 0;
+	background: url(images/bg-feedback.png) top left / 100% 100% no-repeat transparent;
+
+	@include media ("<=xxxlg") {
+		background: url(images/bg-feedback.png) top left / 1930px 100% no-repeat transparent;
+	}
+
+	@include media ("<=md") {
+		padding: 100px 0;
+	}
+
+	&__title.title {
+		margin-bottom: 100px;
+
+		@include media ("<=md") {
+			margin-bottom: 50px;
+		}
+
+		span {
+			color: #000;
+		}
+	}
+
+	&__blocks {
+		padding-bottom: 100px;
+		border-bottom: 1px solid $colorLine;
+
+		@include media ("<=md") {
+			padding-bottom: 50px;
+		}
+	}
+
+	&__block {
+
+		&.opened {
+			display: block;
+		}
+	}
+
+	&__block-title {
+		font-size: 22px;
+		line-height: 45px;
+		padding: 15px 80px 15px 50px;
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		min-height: 75px;
+		background: url(images/icons-sprite.svg#icon-arr-long-view-white) center right 30px/50px 24px no-repeat;
+		border: 1px solid rgba($color: #fff, $alpha: .2);
+		color: $colorText;
+		cursor: pointer;
+		transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		@include media ("<=md") {
+			font-size: 20px;
+			line-height: 32px;
+			padding-left: 30px;
+			padding-right: 105px;
+
+		}
+
+		&:hover {
+			// width: 100%;
+			font-weight: 700;
+			background: url(images/icons-sprite.svg#icon-arr-long-view-green) center right 30px/50px 24px no-repeat rgba($color: #404145, $alpha: .5);
+			color: $colorHover;
+		}
+
+		&.opened {
+			background-image: url(images/icons-sprite.svg#icon-arr-down-view-white);
+			background-size: 24px 50px;
+
+			&:hover {
+				background-image: url(images/icons-sprite.svg#icon-arr-down-view-green);
+
+			}
+		}
+	}
+
+	&__block-inner {
+		display: flex;
+
+		@include media ("<=sm") {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__block-content {
+		display: none;
+		padding: 50px 0 50px 50px;
+		transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		@include media ("<=sm") {
+			padding-left: 30px;
+		}
+	}
+
+	&__block-subtitle {
+		max-width: 235px;
+		width: 100%;
+		font-size: 20px;
+		line-height: 32px;
+		margin-right: 195px;
+
+		@include media ("<=lg") {
+			margin-right: 100px;
+		}
+
+		@include media ("<=sm") {
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+
+	}
+
+	&__block-list {
+		max-width: 690px;
+		width: 100%;
+	}
+
+	&__block-info {
+		color: $colorText;
+		max-width: 690px;
+		width: 100%;
+	}
+
+	&__block-subtitle2 {
+		margin-bottom: 15px;
+		color: #fff;
+	}
+
+	&__block-item {
+		color: $colorText;
+		margin: 15px 0;
+
+	}
+}

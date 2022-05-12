@@ -1,0 +1,91 @@
+.invest {
+	$self: &;
+	background: url(images/bg-invest.jpg) top center / cover no-repeat transparent;
+
+	@include media ("<=xlg") {
+		background: url(images/bg-invest.jpg) top left 65% / cover no-repeat transparent;
+	}
+
+	@include media ("<=md") {
+		background: url(images/bg-invest.jpg) top 90% left 75% / auto 105% no-repeat transparent;
+	}
+
+	@include media ("<=xs") {
+		background: url(images/bg-invest.jpg) top -6% left 75%/auto 60% no-repeat transparent;
+	}
+
+	@include media ("<=xxs") {
+		background: url(images/bg-invest.jpg) top -6% left 78%/auto 60% no-repeat transparent;
+	}
+
+
+	&__benefits {
+		padding: 200px 0;
+
+		@include media ("<=md") {
+			padding: 100px 0 50px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 100px;
+
+		@include media ("<=md") {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		margin: 0 -15px;
+
+		@include media ("<=md") {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item {
+		background-color: $colorBg;
+		max-width: calc(33.33333% - 30px);
+		margin: 0 15px 50px;
+		width: 100%;
+		padding: 50px 40px;
+		box-sizing: border-box;
+
+		@include media ("<=md") {
+			max-width: calc(50% - 30px);
+		}
+
+		@include media ("<=xs") {
+			max-width: calc(100% - 30px);
+			margin-bottom: 30px;
+		}
+	}
+
+	&__item-icon {
+		display: block;
+		margin: 0 auto 30px;
+		padding: 42px 0;
+
+		&_protection {
+			padding: 40px 0;
+		}
+
+		&_profit {
+			padding: 43px 0 42px;
+		}
+	}
+
+	&__item-title {
+		font-size: 20px;
+		line-height: 32px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&__item-text {
+		color: $colorText;
+	}
+
+}

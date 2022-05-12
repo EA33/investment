@@ -1,0 +1,22 @@
+.swiper-button-prev-reviews {
+    $self: &;
+    position: static;
+    border: 1px solid rgba($color: #ffffff, $alpha: .2);
+    width: 40px;
+    height: 40px;
+    background: url(images/icons-sprite.svg#icon-arrow-left-view-green) center / 20px 24px no-repeat $colorDark;
+    margin-right: 10px;
+    cursor: pointer;
+
+    @include media ("<=md") {
+        top: 287px;
+    }
+
+    &:after {
+        display: none;
+    }
+}
+
+.swiper-button-prev-reviews.swiper-button-disabled {
+    background: url(images/icons-sprite.svg#icon-arrow-left-view-white) center / 20px 24px no-repeat $colorDark;
+}

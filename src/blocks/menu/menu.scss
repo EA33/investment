@@ -1,0 +1,46 @@
+.menu {
+	$self: &;
+
+	@include media ("<=md") {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: 100vh;
+		right: -300px;
+		top: 0;
+		max-width: 250px;
+		width: 100%;
+		padding: 126px 20px 30px;
+		background-color: #242529;
+		box-shadow: 0 5px 20px rgba(0, 0, 0, .12);
+		transition: right .3s ease-in;
+		position: absolute;
+		z-index: 5;
+
+		&.opened {
+			right: 0;
+		}
+	}
+
+	&__link {
+		margin: 0 20px;
+		text-transform: uppercase;
+		color: $colorLink;
+		transition: color .5s;
+
+		@include media ("<=lg") {
+			margin: 0 15px;
+		}
+
+		@include media ("<=md") {
+			margin-bottom: 20px;
+		}
+
+		&:hover {
+			color: $colorHover;
+		}
+	}
+
+}

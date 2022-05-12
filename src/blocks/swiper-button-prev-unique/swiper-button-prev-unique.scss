@@ -1,0 +1,25 @@
+.swiper-button-prev-unique {
+	$self: &;
+	position: absolute;
+	top: 337px;
+	left: 0;
+	border: 1px solid rgba($color: #ffffff, $alpha: .7);
+	width: 40px;
+	height: 40px;
+	background: url(images/icons-sprite.svg#icon-arrow-left-view-green) center / 20px 24px no-repeat transparent;
+	margin-right: 10px;
+	cursor: pointer;
+
+	@include media ("<=md") {
+		top: 287px;
+	}
+
+	&:after {
+		display: none;
+	}
+}
+
+.swiper-button-prev-unique.swiper-button-disabled {
+	background: url(images/icons-sprite.svg#icon-arrow-left-view-white) center / 20px 24px no-repeat transparent;
+	opacity: .7;
+}

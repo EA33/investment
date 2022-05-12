@@ -1,0 +1,24 @@
+.swiper-button-next-unique {
+	$self: &;
+	position: absolute;
+	top: 337px;
+	left: 50px;
+	border: 1px solid rgba($color: #ffffff, $alpha: .7);
+	width: 40px;
+	height: 40px;
+	background: url(images/icons-sprite.svg#icon-arrow-right-view-green) center / 20px 24px no-repeat transparent;
+	cursor: pointer;
+
+	@include media ("<=md") {
+		top: 287px;
+	}
+
+	&:after {
+		display: none;
+	}
+}
+
+.swiper-button-next-unique.swiper-button-disabled {
+	background: url(images/icons-sprite.svg#icon-arrow-right-view-white) center / 20px 24px no-repeat transparent;
+	opacity: .7;
+}

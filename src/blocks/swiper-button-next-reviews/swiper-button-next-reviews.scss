@@ -1,0 +1,19 @@
+.swiper-button-next-reviews {
+    $self: &;
+    position: stacic;
+    border: 1px solid rgba($color: #ffffff, $alpha: .2);
+    width: 40px;
+    height: 40px;
+    background: url(images/icons-sprite.svg#icon-arrow-right-view-green) center / 20px 24px no-repeat $colorDark;
+    cursor: pointer;
+
+    @include media ("<=md") {}
+
+    &:after {
+        display: none;
+    }
+}
+
+.swiper-button-next-reviews.swiper-button-disabled {
+    background: url(images/icons-sprite.svg#icon-arrow-right-view-white) center / 20px 24px no-repeat $colorDark;
+}
