@@ -1,10 +1,13 @@
 .header {
 	$self: &;
 	background: url(images/bg-header.jpg) top center / cover no-repeat transparent;
-	overflow: hidden;
 
 	@include media ("<=lg") {
 		background-position: top left 75%;
+	}
+
+	@include media ("<=md") {
+		max-height: 800px;
 	}
 
 	&__top {
@@ -19,6 +22,10 @@
 
 		@include media ("<=lg") {
 			flex-wrap: wrap;
+		}
+
+		@include media ("<=md") {
+			padding: 40px 15px;
 		}
 	}
 
@@ -99,6 +106,11 @@
 	&__content {
 		padding-top: 111px;
 		padding-bottom: 158px;
+
+		@include media ("<=md") {
+			padding-top: 0;
+			padding-bottom: 70px;
+		}
 
 		@include media ("<=xs") {
 			display: flex;
@@ -258,6 +270,10 @@
 		margin-bottom: 93px;
 		padding: 0 15px;
 		box-sizing: border-box;
+
+		@include media ("<=md") {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__scroll {
