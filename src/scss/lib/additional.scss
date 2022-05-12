@@ -122,8 +122,8 @@ $colorDark: rgba($color: #404145, $alpha: .5);
 	left: -9999px;
 }
 
-@mixin outline($color: green) {
-	outline: 3px dotted $color;
+@mixin outline($color: grey) {
+	outline: 1px dotted $color;
 }
 
 // показать текущий диапазон
