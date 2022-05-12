@@ -8,10 +8,6 @@
     margin-right: 10px;
     cursor: pointer;
 
-    @include media ("<=md") {
-        top: 287px;
-    }
-
     &:after {
         display: none;
     }
