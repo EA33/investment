@@ -253,10 +253,6 @@
 			margin-bottom: 70px;
 		}
 
-		@include media ("<=xs") {
-			margin-bottom: 30px;
-		}
-
 		&:hover {
 			color: $colorHover;
 		}
