@@ -116,6 +116,7 @@
 		@include media ("<=md") {
 			margin-right: 0;
 			max-width: 100%;
+			margin-bottom: 30px;
 		}
 
 		@include media ("<=sm") {
@@ -124,11 +125,13 @@
 
 		@include media ("<=xs") {
 			margin-right: 30px;
+			margin-bottom: 0;
 		}
 
 		@include media ("<=xxs") {
 			max-width: 100%;
 			margin-right: 0;
+			margin-bottom: 30px;
 		}
 
 		&:last-child {
