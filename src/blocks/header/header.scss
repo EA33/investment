@@ -1,10 +1,17 @@
 .header {
 	$self: &;
+	display: flex;
+	flex-direction: column;
 	background: url(images/bg-header.jpg) top center / cover no-repeat transparent;
 	overflow: hidden;
+	min-height: 100vh;
 
 	@include media ("<=lg") {
 		background-position: top left 75%;
+	}
+
+	@include media ("<=md") {
+		min-height: auto;
 	}
 
 	&__top {
@@ -182,6 +189,7 @@
 		align-items: center;
 		border-radius: 50%;
 		background-color: $colorBtn;
+		border: none;
 		width: 97px;
 		height: 97px;
 		margin-top: -80px;
@@ -271,8 +279,9 @@
 		display: flex;
 		max-width: 1410px;
 		width: 100%;
-		margin: 0 auto;
-		margin-bottom: 50px;
+		height: 100%;
+		margin: auto auto 50px;
+		align-self: flex-end;
 		padding: 0 15px;
 		box-sizing: border-box;
 

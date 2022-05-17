@@ -64,7 +64,7 @@
 
 		&:hover {
 			// width: 100%;
-			font-weight: 700;
+			text-shadow: 1px 0 1px;
 			background: url(images/icons-sprite.svg#icon-arr-long-view-green) center right 30px/50px 24px no-repeat rgba($color: #404145, $alpha: .5);
 			color: $colorHover;
 		}

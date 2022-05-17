@@ -12,7 +12,8 @@ Swiper.use([Pagination, Navigation]);
 
     const swiper2 = new Swiper('.swiper-container', {
         speed: 600,
-        setWrapperSize: true,
+        loop: false,
+        slidesPerView: '1',
         navigation: {
             nextEl: '.swiper-button-next-reviews',
             prevEl: '.swiper-button-prev-reviews',
@@ -21,5 +22,12 @@ Swiper.use([Pagination, Navigation]);
             el: '.swiper-pagination-reviews',
             type: 'fraction',
         },
+        // on: {
+        //     slideNextTransitionEnd: function () {
+        //         console.log('swiper initialized');
+        //     },
+        // },
     });
+
+
 })();
