@@ -1,10 +1,10 @@
 .offer {
 	$self: &;
-	padding: 200px 0 236px;
+	padding: 200px 0 270px;
 	background: url(images/bg-offer.png) center / cover no-repeat transparent;
 
 	@include media ("<=md") {
-		padding: 100px 0 139px;
+		padding: 100px 0;
 	}
 
 	&__inner {
@@ -96,7 +96,7 @@
 	}
 
 	&__slide {
-		padding-bottom: 35px;
+		padding-bottom: 11px;
 	}
 
 	&__slide-title {
@@ -112,16 +112,24 @@
 	}
 
 	&__arrows {
+		position: absolute;
+		top: 362px;
+		left: 0;
 		display: flex;
-		margin-top: -16px;
-		// max-width: 106px;
 
 		@include media ("<=md") {
-			margin-top: -51px;
+			top: 287px;
 		}
+	}
 
-		@include media ("<=sm") {
-			margin-top: -79px;
+	&__pagination {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 100px;
+
+		@include media ("<=md") {
+			top: 50px;
 		}
 	}
 
@@ -142,6 +150,41 @@
 		text-decoration-color: $colorUnderline;
 		text-underline-offset: 3px;
 		text-decoration-thickness: 2px;
+	}
+
+	&__arrow-next {
+		border: 1px solid rgba($color: #ffffff, $alpha: .7);
+		width: 40px;
+		height: 40px;
+		background: url(images/icons-sprite.svg#icon-arrow-right-view-green) center / 20px 24px no-repeat transparent;
+		cursor: pointer;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.offer__arrow-prev.swiper-button-disabled {
+		background: url(images/icons-sprite.svg#icon-arrow-right-view-white) center / 20px 24px no-repeat transparent;
+		opacity: .7;
+	}
+
+	&__arrow-prev {
+		border: 1px solid rgba($color: #ffffff, $alpha: .7);
+		width: 40px;
+		height: 40px;
+		background: url(images/icons-sprite.svg#icon-arrow-left-view-green) center / 20px 24px no-repeat transparent;
+		margin-right: 10px;
+		cursor: pointer;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.offer__arrow-prev.swiper-button-disabled {
+		background: url(images/icons-sprite.svg#icon-arrow-left-view-white) center / 20px 24px no-repeat transparent;
+		opacity: .7;
 	}
 
 }
