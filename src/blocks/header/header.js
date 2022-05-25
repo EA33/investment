@@ -1,4 +1,12 @@
+import ModalVideo from 'modal-video';
+
 (() => {
+    new ModalVideo('.header__btn-view', {
+        youtube: {
+            autoplay: 0,
+        },
+    });
+
 
     let $menu = $('.menu');
     let $toggle = $('.header__menu-btn');
