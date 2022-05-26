@@ -3,7 +3,7 @@ import ModalVideo from 'modal-video';
 (() => {
     new ModalVideo('.header__btn-view', {
         youtube: {
-            autoplay: 0,
+            autoplay: 1,
         },
     });
 
