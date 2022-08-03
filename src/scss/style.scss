@@ -3,13 +3,14 @@
 
 // Include breakpoints badge
 body {
-	@include screen-media();
+	// @include screen-media();
 }
 
 // Import media-query helper
 @import "../../node_modules/include-media/dist/_include-media.scss";
 
-$breakpoints: ('xxxs': 360px,
+$breakpoints: (
+	'xxxs': 360px,
 	'xxs': 480px,
 	'xs': 640px,
 	'sm': 780px,
@@ -18,7 +19,8 @@ $breakpoints: ('xxxs': 360px,
 	'xlg': 1280px,
 	'xxlg': 1440px,
 	'xxxlg': 1680px,
-	'xxxxlg': 1920px);
+	'xxxxlg': 1920px
+);
 
 // Import animate-scss
 // @import
